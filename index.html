@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap 4</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- utilizo los links de boostrap para compenzar a ultilizar los componentes del framework -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <!-- jQuery library -->
+    <!-- jQuery library libreria de javaScript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 
-    <!-- Popper JS -->
+    <!-- Popper JS como animacion -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
@@ -22,7 +23,7 @@
 </head>
 
 <body>
-  <!-- ctrol+k+c comentario, esto es mi contenedor  -->
+  <!-- ctrol+k+c comentario, esto es mi contenedor principal de todo el proyecto  container -fluid -->
     
     <div class="container-fuid"> 
       <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"> 
@@ -41,31 +42,30 @@
         <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Institucional</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Estudiantes</a>
             </li>
-            <!-- Dropdown lista items dentro de un items -->
+            <!-- Dropdown lista items dentro de un items para deslizar para abajo  -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                Dropdown link
+                Ingreso a las carreras
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" href="#">Software</a>
+                <a class="dropdown-item" href="#">Enfermeria</a>
               </div>
             </li>
           </ul>
 
               <!-- esto es para el usuario ingrese a un buscador  -->
           <form class="form-inline" action="/action_page.php">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-success" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="text" placeholder="Búsqueda">
+            <button class="btn btn-success" type="submit">Búsqueda</button>
           </form>
 
         </div>
@@ -97,7 +97,7 @@
           </div>
         </div>
       
-        <!-- Left and right controls -->
+        <!-- Left and right controls son los iconos para q vaya de derecha a izq -->
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </a>
@@ -107,29 +107,114 @@
       
       </div>
 
-<!--  este es mi separador llamo my para hacerle el espaciado dentro del boton  -->
+<!--  este es mi separador llamo use la clase my-3 para hacerle el espaciado y el margen dentro del boton  -->
       <button type="button" class="btn btn-primary btn-block my-3">CARRERAS</button> 
       
-     
+     <!-- mt-3 esa caja se separe entre cajas la separa con la de arriba  -->
       <div class="row mt-3">
 
+
+        <!-- las cards clase sm-6 para dividir en dos la columna   -->
         <div class="card col-sm-6" style="width:400px">
           <img class="card-img-top" src="img/enfermeria.jpg" alt="enfermeria">
           <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">Some example text.</p>
-            <a href="#" class="btn btn-primary">See Profile</a>
+            <h4 class="card-title">Enfermeria</h4>
+            <p class="card-text">Una carrera de alta demanda</p>
+            <!-- estaba la etiqueta a como boton, lo eliminamos y usamos la modal Button to Open the Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Mas Info 
+            </button>
           </div>
         </div>
-  
+        
+            <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Perfil Profesional</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                Los conocimientos y habilidades desarrolladas durante su formación le permiten a la/el Enfermera/o el ejercicio profesional en relación de dependencia y en forma libre, desarrollando, brindando y gestionando los cuidados de enfermería autónomos e interdependientes para la promoción, prevención, recuperación y rehabilitación de la persona, la familia, grupo y comunidad hasta el nivel de complejidad de cuidados intermedios, en los ámbitos comunitario y hospitalario en las distintas etapas del ciclo vital; gestionando su ámbito de trabajo y participando en estudios de investigación-acción.
+
+                Este profesional actúa de manera interdisciplinaria con profesionales de diferente nivel de calificación involucrados en su actividad: médicos de distintas especialidades, técnicos y otros profesionales del campo de la salud.
+
+                Como Enfermera/Enfermero es capaz de interpretar las definiciones estratégicas surgidas de los estamentos profesionales y jerárquicos correspondientes en el marco del equipo de trabajo en el cual participa, posee la capacidad de llevar adelante la gestión de sus actividades específicas y recursos de los cuales es responsable, realizando y controlando la totalidad de las actividades requeridas hasta su efectiva concreción, teniendo en cuenta los criterios de seguridad, impacto ambiental, relaciones humanas, calidad, productividad y costos.
+
+                Asimismo, es responsable y ejerce autonomía respecto de su propio trabajo. Toma decisiones sobre aspectos problemáticos y no rutinarios en todas las funciones y actividades de su trabajo.
+
+                La formación continua dentro de su ámbito de desempeño le permite adaptarse flexiblemente a distintos roles profesionales, trabajando de manera interdisciplinaria y en equipo, con el objetivo de continuar aprendiendo a lo largo de toda su vida.
+
+                Desarrolla el dominio de un “saber hacer” complejo en el que se movilizan conocimientos, valores, actitudes y habilidades de carácter tecnológico, social y personal que definen su identidad profesional. Estos valores actitudes están en la base de los códigos de ética propios de su campo profesional.
+
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
         <div class="card col-sm-6" style="width:400px">
           <img class="card-img-top" src="img/software.jpg" alt="software">
           <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">Some example text.</p>
-            <a href="#" class="btn btn-primary">See Profile</a>
+            <h4 class="card-title">Desarrollo de Software</h4>
+            <p class="card-text">Un perfil muy demandado</p>
+            <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+            Mas Info 
+          </button>
           </div>
         </div>
+        
+        <!-- The Modal -->
+        <div class="modal" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Perfil Profesional</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                Este técnico se ocupa en organizaciones de diversos tipos; empresas que realizan desarrollo de software por encargo de organizaciones locales o extranjeras, que proveen software junto con otros servicios de asesoramiento y consultoría, y, en menor número, que desarrollan sus propios productos de software para vender en el país o en el exterior. También en organizaciones dedicadas a otras actividades, pero que producen el software que necesitan para desarrollar sus propias actividades o que integran en productos que venden.
+
+                Su posición ocupacional suele denominarse analista programador o programador, aunque últimamente se está generalizando una denominación más abarcativa y menos categorizante, desarrollador de software. Integra equipos de proyecto dedicados al desarrollo o mantenimiento de software y recibe asignaciones específicas que tienen que resolver en lapsos que suelen medirse en términos de días o semanas, produciendo artefactos que satisfagan especificaciones y se integren al sistema objeto del proyecto.
+
+                Resuelve estas asignaciones individualmente o trabajando en pares, recibiendo la supervisión y asesoramiento de un líder de proyecto o de grupo, con quien consulta dudas y decisiones significativas o comunica inconvenientes. También recibe apoyo y brinda colaboración a otros miembros del grupo. Su trabajo es verificado por un grupo de “testing” y eventuales controles cruzados de código importante. Con una mayor experiencia o especialización en determinadas tecnologías o metodologías, posibles evoluciones ocupacionales del Técnico Superior en Desarrollo de Software son el liderar grupos de trabajo o asumir roles de analista técnico en la materia de su especialidad.
+
+                Asimismo, puede desempeñarse en forma autónoma, asumiendo la mayor parte de las tareas propias del proceso, sobre todo trabajando en forma independiente resolviendo problemas de pequeñas organizaciones que requieren sistemas de baja complejidad y reducida dimensión. Por otra parte, Técnicos Superiores en Desarrollo de Software o profesionales equivalentes con capacidad emprendedora pueden y suelen asociarse entre ellos para generar sus propias empresas para brindar servicios de desarrollo y proveer software a terceros.
+
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
 
       </div>
 
@@ -138,6 +223,7 @@
 
       <!-- lo q hace es apretar el boton y te aparece algo una informacion -->
             <!-- Nav pills creo el class row para crear una fila , flexcolumn era posicionar los contenedores -->
+            <!-- no se puede dividi en columnas sino hay una fija, asiq primero va el row mt-3 -->
       <div class="row mt-3">
       <ul class="nav nav-pills col-sm-6 flex-column">
         <li class="nav-item">
@@ -164,14 +250,14 @@
           <div class="tab-pane container fade" id="Contactos">
             <form action="/action_page.php">
               <div class="form-group">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                <label for="email">Mail:</label>
+                <input type="email" class="form-control" placeholder="Ingrese su mail" id="email">
               </div>
               <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                <label for="pwd">Contraseña:</label>
+                <input type="password" class="form-control" placeholder="Ingrese su contraseña" id="pwd">
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
             </form> 
           </div>
       </div>

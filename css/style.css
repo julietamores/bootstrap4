@@ -2,8 +2,12 @@
     width: 100%;
     height: 100%;
   }
-
+/* que la imagen ocupe el 100% de la pagina tanto del ancho como el alto */
 
 .row .nav .nav-item .nav-link {
   text-align: center;
+}
+
+#demo{
+  margin-top: 82px;
 }
